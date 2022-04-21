@@ -4,13 +4,14 @@
   <form method="post">
  
     {% csrf_token %}
+    {{ form.as_p }}
     <div class="form-group">
       <label for="title">عنوان</label>
-      <input type="text" class="form-control" id="id_title" name="title">
+      <input type="text" class="form-control" id="id_title1" name="title">
     </div>
     <div class="form-group">
       <label for="text">متن</label>
-      <textarea class="form-control" id="id_text" name="text" rows="5"></textarea>
+      <textarea class="form-control" id="id_text1" name="text" rows="5"></textarea>
     </div>
     <button type="submit" class="btn btn-success">ذخیره</button>
   </form>
